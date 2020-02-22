@@ -1,0 +1,17 @@
+EXPORTS
+	PS2EgetLibType
+	PS2EgetLibVersion2
+	PS2EgetLibName
+	PADsetSettingsDir
+	PADsetLogDir
+	PADinit
+	PADshutdown
+	PADclose
+	PADopen
+	PADstartPoll
+	PADpoll
+	PADquery
+	PADkeyEvent
+	PADsetSlot
+	PADqueryMtap
+	
