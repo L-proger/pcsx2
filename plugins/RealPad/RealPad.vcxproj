@@ -87,6 +87,8 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;REALPAD_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Dependencies\LFramework\Src;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -105,6 +107,8 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;REALPAD_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Dependencies\LFramework\Src;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -121,6 +125,8 @@
       <PreprocessorDefinitions>_DEBUG;REALPAD_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Dependencies\LFramework\Src;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -139,6 +145,8 @@
       <PreprocessorDefinitions>NDEBUG;REALPAD_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Dependencies\LFramework\Src;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -150,6 +158,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\BitFieldTest.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\Input\Input.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\Input\Keyboard.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\Input\Mouse.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\IO\StreamWriter.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\IO\Terminal\Terminal.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\IO\Terminal\TerminalStreamCout.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\IO\Terminal\TerminalStreamUartStm32.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\MCU\stm32\HardFaultHandler.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\Syscalls.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\Thread\SemaphoreStdTest.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\Thread\Thread.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\Thread\ThreadTest.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\UnitTest\UnitTest.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\USB\Device\UsbDEndpoint.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\USB\Device\USBDevice.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\USB\Device\UsbDLowLevel.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\USB\Host\USBHDevice.cpp" />
+    <ClCompile Include="Dependencies\LFramework\Src\LFramework\USB\USBTypesTest.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="Library.cpp" />
     <ClCompile Include="Log\Log.cpp" />
@@ -158,6 +185,62 @@
     <None Include="Exports.def" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Assert.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\BitField.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Containers\LinkedList.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Debug.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Detect\DetectCPU.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Detect\DetectEndianness.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Detect\DetectOS.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Input\Input.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Input\Keyboard.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Input\KeysStateManager.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Input\Mouse.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\IO\Stream.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\IO\StreamWriter.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\IO\Terminal\Terminal.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\IO\Terminal\TerminalAnsi.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\IO\Terminal\TerminalStream.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Macro\ForEach.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\MCU\DMA\DMA.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\MCU\Mcu.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\MCU\stm32\HalLibrary.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\MCU\stm32\HardFaultHandler.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\MCU\USBDevice\PHY\Stm32FsPhy.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\MCU\USBDevice\PHY\UsbDeviceSoftPhy.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\MCU\USBDevice\PHY\UsbInternalFsDeviceDriver.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Reflection\Reflection.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\System.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\SystemArmCortexM.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\SystemWindows.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Thread\Semaphore.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Thread\SemaphoreStd.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Thread\Thread.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Thread\ThreadFreeRTOS.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Thread\ThreadPlatform.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Thread\ThreadStd.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\Time\Stopwatch.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\TupleUtils.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\TypeTraits\Integral.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\UnitTest\UnitTest.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Device\UsbDBulkInterface.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Device\UsbDDeviceContext.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Device\UsbDEndpoint.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Device\USBDevice.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Device\UsbDInterface.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Host\UsbHDevice.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Host\UsbHEndpoint.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Host\UsbHException.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Host\UsbHInterface.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\Host\UsbHostManager.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\USBDevice_Deprecated.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\usbd_conf.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\UsbEndpoint.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\UsbException.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\UsbInterface.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\UsbMicrosoftTypes.h" />
+    <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\USBTypes.h" />
+    <ClInclude Include="LFrameworkConfig.h" />
     <ClInclude Include="Log\Log.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

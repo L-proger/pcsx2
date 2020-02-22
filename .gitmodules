@@ -1,3 +1,6 @@
 [submodule "3rdparty/xz/xz"]
 	path = 3rdparty/xz/xz
 	url = https://github.com/PCSX2/xz.git
+[submodule "plugins/RealPad/Dependencies/LFramework"]
+	path = plugins/RealPad/Dependencies/LFramework
+	url = https://github.com/L-proger/LFramework.git
