@@ -84,7 +84,13 @@ SndOutModule *mods[] =
     {
         &NullOut,
 #ifdef _MSC_VER
+
+		XAudio2Out,
+
+#if (_WIN32_WINNT < _WIN32_WINNT_WIN8) 
         XAudio2_27_Out,
+#endif
+
         DSoundOut,
         WaveOut,
 #endif
