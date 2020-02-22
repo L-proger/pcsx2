@@ -180,6 +180,7 @@
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="Library.cpp" />
     <ClCompile Include="Log\Log.cpp" />
+    <ClCompile Include="UsbGamepad.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Exports.def" />
@@ -242,6 +243,7 @@
     <ClInclude Include="Dependencies\LFramework\Src\LFramework\USB\USBTypes.h" />
     <ClInclude Include="LFrameworkConfig.h" />
     <ClInclude Include="Log\Log.h" />
+    <ClInclude Include="UsbGamepad.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

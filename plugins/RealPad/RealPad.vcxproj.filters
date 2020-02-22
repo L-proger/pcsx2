@@ -81,6 +81,9 @@
     <ClCompile Include="Dependencies\LFramework\Src\LFramework\Syscalls.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UsbGamepad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Exports.def">
@@ -257,6 +260,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LFrameworkConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UsbGamepad.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
