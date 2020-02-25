@@ -1,6 +1,6 @@
 #pragma once
 
-//#define PR_LOG_ENABLED
+#define PR_LOG_ENABLED
 
 #ifdef PR_LOG_ENABLED
 #define RP_LOG(prefix, format, ...) logWrite(prefix, format, ##__VA_ARGS__)
